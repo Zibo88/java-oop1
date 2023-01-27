@@ -14,16 +14,22 @@ public class Conto {
 		this.saldo = saldo;
 	}
 	
-	void versamento(int saldo , int contanti ) {
-			contanti += saldo;
+	float versamento() {
+		
+			return saldo;
+
 		}
 
-	void prelevare(int saldo, int contanti) {
+	float prelevare() {
+		
 		
 		if( saldo > 0) {
 			
-			saldo = saldo - contanti;
+			return saldo;
 		}
+		
+		return saldo;
+		
 	}
 	
 	}
