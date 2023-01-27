@@ -15,15 +15,9 @@ public class Conto {
 	}
 	
 	void versamento(int saldo , int contanti ) {
-		
 			contanti += saldo;
-			
 		}
-		
-		
-	
-	
-	
+
 	void prelevare(int saldo, int contanti) {
 		
 		if( saldo > 0) {
