@@ -8,11 +8,12 @@ public class Prodotto {
 		float prezzo;
 		float iva = 0.22F;
 		
-		public Prodotto(int codiceProdotto, String nome, String descrizione, float prezzo) {
+		public Prodotto(int codiceProdotto, String nome, String descrizione, float prezzo, float iva) {
 			this.codiceProdotto = codiceProdotto;
 			this.nome = nome;
 			this.descrizione = descrizione;
 			this.prezzo = prezzo;
+			this.iva = iva;
 		}
 		
 		float calcola() {
@@ -22,12 +23,27 @@ public class Prodotto {
 			return prezzoFinaleSenzaIva;
 		}
 		
-		
-		float calcola(float iva) {
-			
-			float prezzoFinaleConIva = prezzo * iva;
+		float calcolaConIva() {
+			float prezzoFinaleConIva = prezzo*iva;
 			return prezzoFinaleConIva;
 		}
 		
+		String longName() {
+			String allName = codiceProdotto + nome;
+			
+			return allName;
+		}
 		
+		
+//		modificare
+//		float calcola(float iva) {
+//			
+//			float prezzoFinaleConIva = prezzo * iva;
+//			return prezzoFinaleConIva;
+//		}
+		
+//		nome esteso
+		
+		
+//		nome padding
 }
