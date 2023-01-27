@@ -56,6 +56,8 @@ public class Bank {
 				if(contanti <= saldo) {
 					if(contanti != 0) {
 						saldo = saldo - contanti;	
+						System.out.println("Nome:" + " " + nuovoConto.proprietario);
+						System.out.println("Numero di conto:" + " " + nuovoConto.numeroDiConto);
 						System.out.println("Il nuovo saldo è" + " " + saldo);
 					}
 					
@@ -69,11 +71,6 @@ public class Bank {
 			}
 	
 		data.close();
-		
-		
-		
-		
-		
 	}
 
 }
