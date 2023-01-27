@@ -16,11 +16,7 @@ public class Main {
 		Random randomNumber = new Random();
 		Scanner data = new Scanner(System.in);
 		
-		
 		codiceProdotto = randomNumber.nextInt(10000)+1;
-		
-		String codiceProdottoString = String. valueOf(codiceProdotto);
-		
 		
 		System.out.println("dimmi il nome del prodotto");
 		nome = data.nextLine();
@@ -31,12 +27,10 @@ public class Main {
 		System.out.println("Quanto costa il prodotto");
 		prezzo = data.nextFloat();
 		
-		
 		singoloProdotto = new Prodotto(codiceProdotto, nome, descrizione, prezzo);
 		
 		System.out.println("Codice prodotto:"+" "+codiceProdotto);
 		System.out.println("Codice prodotto codice-nome:"+" "+codiceProdotto+"-"+nome);
-		
 		
 		float prezzoDefault = singoloProdotto.calcola();
 		System.out.println("Prezzo senza Iva"+" "+prezzoDefault);
@@ -45,7 +39,7 @@ public class Main {
 		
 		System.out.println("Prezzo con Iva"+" "+ prezzoConIva);
 		
-		
+		data.close();
 		
 	}
 
