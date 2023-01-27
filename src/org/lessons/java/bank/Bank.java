@@ -52,6 +52,11 @@ public class Bank {
 				System.out.println("quanto vuoi prelevare?");
 				System.out.println("Se vuoi porre fine all'operazione digita 0");
 				contanti  = data.nextInt();
+				data.nextLine();
+				
+				if(contanti == 0) {
+					System.out.println("operazione annullata");
+				}
 				
 				if(contanti <= saldo) {
 					if(contanti != 0) {
@@ -61,9 +66,8 @@ public class Bank {
 						System.out.println("Il nuovo saldo è" + " " + saldo);
 					}
 					
-					if(contanti == 0) {
-						System.out.println("operazione annullata");
-					}
+					
+					
 				}else {
 					System.out.println("Non ci sono abbastanza fondi");
 				}
