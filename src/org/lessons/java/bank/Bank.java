@@ -17,7 +17,6 @@ public class Bank {
 		String userName = "";
 		int saldo = 100;
 		int contanti = 0;
-		String exit ="";
 		String userChoiche = "";
 		
 		System.out.println("Dimmi il tuo nome");
